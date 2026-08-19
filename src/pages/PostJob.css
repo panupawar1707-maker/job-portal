@@ -1,0 +1,33 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+
+.post-job-page { min-height: 100vh; background: #f8fafc; color: #1e293b; }
+
+.post-job-container { max-width: 700px; margin: 0 auto; padding: 50px 20px; }
+
+.post-job-container h1 { font-size: 28px; color: #0f172a; margin-bottom: 6px; }
+
+.post-job-subtitle { color: #64748b; margin-bottom: 30px; font-size: 15px; }
+
+.post-job-message { background: #eff6ff; color: #2563eb; padding: 12px; border-radius: 8px; margin-bottom: 20px; font-size: 14px; font-weight: 500; }
+
+.post-job-container form { background: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+
+.post-job-container label { display: block; font-size: 14px; font-weight: 600; color: #334155; margin-bottom: 6px; margin-top: 18px; }
+
+.post-job-container input, .post-job-container select, .post-job-container textarea {
+  width: 100%; padding: 12px 14px; border: 1px solid #cbd5e1; border-radius: 8px;
+  font-size: 14px; outline: none; font-family: inherit;
+}
+
+.post-job-container input:focus, .post-job-container select:focus, .post-job-container textarea:focus { border-color: #2563eb; }
+
+.salary-row { display: flex; gap: 16px; }
+.salary-row > div { flex: 1; }
+
+.post-job-btn {
+  width: 100%; padding: 14px; background: #2563eb; color: #fff; border: none; border-radius: 8px;
+  font-weight: 600; font-size: 15px; margin-top: 28px; cursor: pointer;
+}
+
+.post-job-btn:hover { background: #1d4ed8; }
+.post-job-btn:disabled { background: #94a3b8; cursor: not-allowed; }

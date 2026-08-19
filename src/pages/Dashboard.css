@@ -1,0 +1,84 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+
+.dashboard-page { min-height: 100vh; background: #f1f5f9; color: #1e293b; }
+
+.loading-text { text-align: center; padding: 80px; color: #64748b; }
+
+.dashboard-header { background: linear-gradient(135deg, #0f172a, #1e3a8a); color: #fff; padding: 40px 40px 0; }
+
+.dashboard-header-content { display: flex; align-items: center; gap: 20px; max-width: 1100px; margin: 0 auto; padding-bottom: 30px; flex-wrap: wrap; }
+
+.dashboard-avatar {
+  width: 78px; height: 78px; border-radius: 50%; background: linear-gradient(135deg, #2563eb, #60a5fa);
+  display: flex; align-items: center; justify-content: center; font-size: 30px; font-weight: 700;
+  flex-shrink: 0; border: 3px solid rgba(255,255,255,0.2);
+}
+
+.dashboard-header-info { flex: 1; min-width: 200px; }
+.dashboard-header-info h1 { font-size: 24px; font-weight: 800; margin-bottom: 4px; }
+.dashboard-header-info p { color: #93c5fd; font-size: 14px; margin-bottom: 4px; }
+.dashboard-email { font-size: 12px; color: #94a3b8; }
+
+.header-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+
+.edit-profile-btn {
+  padding: 10px 22px; border: 1.5px solid rgba(255,255,255,0.3); border-radius: 8px; color: #fff;
+  text-decoration: none; font-size: 13px; font-weight: 600; transition: all 0.2s ease; white-space: nowrap;
+}
+
+.edit-profile-btn:hover { background: rgba(255,255,255,0.1); }
+
+.dashboard-stats { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; transform: translateY(30px); }
+
+.stat-box { background: #fff; border-radius: 14px; padding: 20px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+.stat-box h2 { font-size: 28px; color: #2563eb; font-weight: 800; }
+.stat-box p { font-size: 13px; color: #64748b; margin-top: 4px; }
+
+.dashboard-tabs { max-width: 1100px; margin: 46px auto 0; padding: 0 40px; display: flex; gap: 8px; border-bottom: 1px solid #e2e8f0; flex-wrap: wrap; }
+
+.tab-btn {
+  background: transparent; border: none; padding: 14px 18px; font-size: 14px; font-weight: 600; color: #64748b;
+  cursor: pointer; border-bottom: 3px solid transparent; transition: all 0.15s ease; display: flex; align-items: center; gap: 6px;
+}
+
+.tab-btn:hover { color: #2563eb; }
+.tab-btn.active { color: #2563eb; border-bottom-color: #2563eb; }
+
+.dashboard-content { max-width: 1100px; margin: 0 auto; padding: 30px 40px 60px; }
+
+.overview-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+
+.overview-card, .list-card { background: #fff; border-radius: 14px; padding: 26px; box-shadow: 0 4px 14px rgba(0,0,0,0.05); }
+
+.overview-card h3, .list-card h3 { font-size: 16px; color: #0f172a; margin-bottom: 18px; }
+
+.mini-row { display: flex; justify-content: space-between; align-items: center; padding: 12px 0; border-bottom: 1px solid #f1f5f9; }
+.mini-row div { display: flex; flex-direction: column; }
+.mini-row strong { font-size: 14px; color: #1e293b; }
+.mini-row span { font-size: 12px; color: #94a3b8; }
+
+.view-all-link {
+  display: inline-block; margin-top: 16px; font-size: 13px; color: #2563eb; font-weight: 600;
+  text-decoration: none; cursor: pointer; background: none; border: none; padding: 0;
+}
+.view-all-link:hover { text-decoration: underline; }
+
+.empty-hint { color: #94a3b8; font-size: 14px; text-align: center; padding: 30px 0; }
+.empty-hint a { color: #2563eb; font-weight: 600; }
+
+.data-table { width: 100%; border-collapse: collapse; }
+.data-table th { text-align: left; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; color: #94a3b8; padding: 12px 10px; border-bottom: 2px solid #f1f5f9; }
+.data-table td { padding: 14px 10px; font-size: 14px; color: #334155; border-bottom: 1px solid #f1f5f9; }
+.data-table tr:hover { background: #f8fafc; }
+
+.status-badge { padding: 5px 14px; border-radius: 20px; font-size: 12px; font-weight: 700; text-transform: capitalize; display: inline-block; }
+.status-blue { background: #dbeafe; color: #2563eb; }
+.status-purple { background: #ede9fe; color: #7c3aed; }
+.status-red { background: #fee2e2; color: #dc2626; }
+.status-green { background: #dcfce7; color: #16a34a; }
+.status-orange { background: #ffedd5; color: #ea580c; }
+
+@media (max-width: 850px) {
+  .dashboard-stats { grid-template-columns: repeat(2, 1fr); }
+  .overview-grid { grid-template-columns: 1fr; }
+}

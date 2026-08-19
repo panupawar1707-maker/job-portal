@@ -1,0 +1,65 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+
+.applicants-page { min-height: 100vh; background: #f1f5f9; color: #1e293b; }
+
+.applicants-header { background: linear-gradient(135deg, #0f172a, #1e3a8a); color: #fff; padding: 30px 40px 40px; }
+.applicants-header h1 { font-size: 24px; font-weight: 800; margin-top: 10px; }
+
+.back-link { color: #93c5fd; text-decoration: none; font-size: 13px; font-weight: 600; }
+.back-link:hover { text-decoration: underline; }
+
+.applicants-message { background: rgba(255,255,255,0.15); padding: 10px 16px; border-radius: 8px; margin-top: 14px; font-size: 13px; display: inline-block; }
+
+.applicants-container { max-width: 900px; margin: 0 auto; padding: 30px 40px 60px; display: flex; flex-direction: column; gap: 18px; }
+
+.empty-hint { color: #94a3b8; font-size: 14px; text-align: center; padding: 30px 0; }
+.empty-state { text-align: center; background: #fff; border-radius: 14px; padding: 60px 20px; color: #64748b; }
+
+.applicant-card { background: #fff; border-radius: 14px; padding: 24px; box-shadow: 0 4px 14px rgba(0,0,0,0.05); }
+
+.applicant-top { display: flex; align-items: center; gap: 14px; margin-bottom: 14px; }
+
+.applicant-avatar {
+  width: 48px; height: 48px; border-radius: 50%; background: linear-gradient(135deg, #2563eb, #60a5fa);
+  color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 18px; flex-shrink: 0;
+}
+
+.applicant-info { flex: 1; }
+.applicant-info h3 { font-size: 16px; color: #0f172a; }
+.applicant-info p { font-size: 13px; color: #64748b; }
+.applicant-title { color: #2563eb !important; font-weight: 600; }
+
+.status-badge { padding: 5px 14px; border-radius: 20px; font-size: 12px; font-weight: 700; text-transform: capitalize; white-space: nowrap; }
+.status-blue { background: #dbeafe; color: #2563eb; }
+.status-purple { background: #ede9fe; color: #7c3aed; }
+.status-red { background: #fee2e2; color: #dc2626; }
+.status-green { background: #dcfce7; color: #16a34a; }
+
+.applicant-skills { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
+.skill-chip { background: #eff6ff; color: #2563eb; font-size: 12px; font-weight: 600; padding: 4px 12px; border-radius: 20px; }
+
+.applicant-meta { display: flex; gap: 18px; flex-wrap: wrap; font-size: 13px; color: #64748b; margin-bottom: 16px; }
+.applicant-meta a { color: #2563eb; text-decoration: none; font-weight: 600; }
+
+.applicant-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+
+.action-btn { padding: 9px 18px; border-radius: 8px; font-size: 13px; font-weight: 600; cursor: pointer; border: none; }
+.action-btn.shortlist { background: #ede9fe; color: #7c3aed; }
+.action-btn.shortlist:hover { background: #7c3aed; color: #fff; }
+.action-btn.reject { background: #fee2e2; color: #dc2626; }
+.action-btn.reject:hover { background: #dc2626; color: #fff; }
+.action-btn.interview { background: #ffedd5; color: #ea580c; }
+.action-btn.interview:hover { background: #ea580c; color: #fff; }
+.action-btn.offer { background: #dcfce7; color: #16a34a; }
+.action-btn.offer:hover { background: #16a34a; color: #fff; }
+
+.interview-form { margin-top: 16px; padding: 16px; background: #f8fafc; border-radius: 10px; border: 1px solid #e2e8f0; }
+.interview-form-row { display: flex; gap: 10px; margin-bottom: 10px; flex-wrap: wrap; }
+.interview-form-row input, .interview-form textarea {
+  flex: 1; min-width: 160px; padding: 10px 12px; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 13px; font-family: inherit;
+}
+.interview-form textarea { width: 100%; margin-bottom: 10px; }
+.interview-form-actions { display: flex; justify-content: flex-end; gap: 10px; }
+.cancel-btn { padding: 9px 18px; background: transparent; border: 1px solid #cbd5e1; border-radius: 8px; cursor: pointer; font-size: 13px; }
+.confirm-btn { padding: 9px 18px; background: #2563eb; color: #fff; border: none; border-radius: 8px; cursor: pointer; font-size: 13px; font-weight: 600; }
+.confirm-btn:hover { background: #1d4ed8; }

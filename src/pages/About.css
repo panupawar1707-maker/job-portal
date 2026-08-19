@@ -1,0 +1,96 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+
+.about-page { color: #1e293b; overflow-x: hidden; }
+
+.about-hero {
+  position: relative;
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 60%, #1e40af 100%);
+  padding: 100px 20px 90px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.about-hero-blob { position: absolute; border-radius: 50%; filter: blur(65px); opacity: 0.45; animation: float 9s ease-in-out infinite; }
+.blob-x { width: 300px; height: 300px; background: #3b82f6; top: -70px; right: -50px; }
+.blob-y { width: 220px; height: 220px; background: #60a5fa; bottom: -50px; left: -30px; animation-delay: 3s; }
+
+@keyframes float {
+  0%, 100% { transform: translate(0,0) scale(1); }
+  50% { transform: translate(-16px, -22px) scale(1.06); }
+}
+
+.about-hero-content { position: relative; z-index: 2; max-width: 720px; margin: 0 auto; }
+
+.about-eyebrow {
+  display: inline-block; background: rgba(96,165,250,0.15); color: #93c5fd; font-size: 12px;
+  font-weight: 700; letter-spacing: 1.5px; padding: 6px 16px; border-radius: 20px; margin-bottom: 20px;
+}
+
+.about-hero-content h1 { font-size: 40px; color: #fff; font-weight: 800; line-height: 1.3; margin-bottom: 18px; }
+.about-hero-content h1 span {
+  background: linear-gradient(90deg, #60a5fa, #93c5fd);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+
+.about-hero-content p { color: #cbd5e1; font-size: 16px; line-height: 1.7; }
+
+.about-stats {
+  max-width: 1000px; margin: -50px auto 0; padding: 0 20px; position: relative; z-index: 3;
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;
+}
+
+.about-stat { background: #fff; border-radius: 16px; padding: 26px 16px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+.about-stat h2 { font-size: 28px; color: #2563eb; font-weight: 800; }
+.about-stat p { font-size: 12px; color: #64748b; margin-top: 6px; }
+
+.about-values { max-width: 1000px; margin: 90px auto 0; padding: 0 20px; text-align: center; }
+
+.section-title { font-size: 28px; color: #0f172a; font-weight: 800; margin-bottom: 40px; }
+
+.values-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 22px; }
+
+.value-card {
+  background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 16px; padding: 30px 22px; text-align: left;
+  animation: fadeInUp 0.5s ease both; transition: transform 0.2s ease;
+}
+.value-card:hover { transform: translateY(-6px); }
+
+@keyframes fadeInUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+
+.value-icon { font-size: 30px; margin-bottom: 14px; }
+.value-card h3 { font-size: 16px; color: #0f172a; margin-bottom: 8px; }
+.value-card p { font-size: 13.5px; color: #64748b; line-height: 1.6; }
+
+.about-mission { max-width: 800px; margin: 90px auto 0; padding: 0 20px; }
+
+.mission-card {
+  background: linear-gradient(135deg, #eff6ff, #dbeafe); border-radius: 20px; padding: 46px; text-align: center;
+}
+.mission-card h2 { font-size: 24px; color: #0f172a; margin-bottom: 16px; }
+.mission-card p { font-size: 15px; color: #334155; line-height: 1.8; }
+
+.about-cta {
+  margin-top: 90px; background: linear-gradient(135deg, #0f172a, #1e3a8a); color: #fff; text-align: center; padding: 80px 20px;
+}
+.about-cta h2 { font-size: 28px; font-weight: 800; margin-bottom: 10px; }
+.about-cta p { color: #cbd5e1; margin-bottom: 30px; font-size: 15px; }
+
+.about-cta-buttons { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; }
+
+.cta-btn-solid {
+  padding: 13px 28px; background: #2563eb; color: #fff; border-radius: 8px; text-decoration: none; font-weight: 700;
+  transition: all 0.2s ease;
+}
+.cta-btn-solid:hover { background: #1d4ed8; transform: translateY(-2px); }
+
+.cta-btn-outline {
+  padding: 13px 28px; border: 2px solid #fff; color: #fff; border-radius: 8px; text-decoration: none; font-weight: 700;
+  transition: all 0.2s ease;
+}
+.cta-btn-outline:hover { background: rgba(255,255,255,0.1); }
+
+.footer { text-align: center; padding: 22px; background: #0f172a; color: #94a3b8; font-size: 14px; }
+
+@media (max-width: 700px) {
+  .about-stats { grid-template-columns: repeat(2, 1fr); }
+}

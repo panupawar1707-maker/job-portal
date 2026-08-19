@@ -1,0 +1,39 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+
+.loading-text { text-align: center; padding: 60px; color: #64748b; }
+
+.job-details-page { color: #1e293b; min-height: 100vh; background: #f8fafc; }
+
+.job-details-container {
+  max-width: 800px; margin: 30px auto; padding: 40px 20px; background: #fff;
+  border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.job-details-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+
+.job-details-header h1 { font-size: 28px; color: #0f172a; }
+
+.job-type { background: #dbeafe; color: #2563eb; font-size: 13px; font-weight: 600; padding: 6px 14px; border-radius: 20px; }
+
+.job-company { font-size: 18px; color: #475569; font-weight: 500; margin-bottom: 16px; }
+
+.job-meta {
+  display: flex; gap: 24px; flex-wrap: wrap; font-size: 14px; color: #64748b;
+  margin-bottom: 30px; padding-bottom: 20px; border-bottom: 1px solid #e2e8f0;
+}
+
+.job-description, .job-skills { margin-bottom: 24px; }
+
+.job-description h3, .job-skills h3 { font-size: 18px; color: #0f172a; margin-bottom: 10px; }
+
+.job-description p, .job-skills p { color: #475569; line-height: 1.7; }
+
+.apply-message { background: #eff6ff; color: #2563eb; padding: 12px; border-radius: 8px; margin-bottom: 20px; font-size: 14px; font-weight: 500; }
+
+.apply-now-btn {
+  padding: 14px 36px; background: #2563eb; color: #fff; border: none; border-radius: 8px;
+  font-weight: 600; font-size: 15px; cursor: pointer;
+}
+
+.apply-now-btn:hover { background: #1d4ed8; }
+.apply-now-btn:disabled { background: #94a3b8; cursor: not-allowed; }

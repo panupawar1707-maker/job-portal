@@ -1,0 +1,102 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+
+.employer-dashboard-page { min-height: 100vh; background: #f1f5f9; color: #1e293b; }
+
+.employer-header { background: linear-gradient(135deg, #0f172a, #1e3a8a); color: #fff; padding: 40px 40px 0; }
+
+.employer-header-content {
+  display: flex; justify-content: space-between; align-items: center; max-width: 1100px;
+  margin: 0 auto; padding-bottom: 30px; flex-wrap: wrap; gap: 16px;
+}
+
+.employer-header-content h1 { font-size: 24px; font-weight: 800; margin-bottom: 6px; }
+.employer-header-content p { color: #93c5fd; font-size: 14px; }
+
+.post-job-cta {
+  padding: 12px 24px; background: #2563eb; color: #fff; border-radius: 8px; text-decoration: none;
+  font-weight: 700; font-size: 14px; transition: all 0.2s ease; white-space: nowrap;
+}
+.post-job-cta:hover { background: #1d4ed8; transform: translateY(-2px); }
+
+.employer-stats { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; transform: translateY(30px); }
+
+.stat-box { background: #fff; border-radius: 14px; padding: 20px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+.stat-box h2 { font-size: 28px; color: #2563eb; font-weight: 800; }
+.stat-box p { font-size: 13px; color: #64748b; margin-top: 4px; }
+
+.employer-content { max-width: 1100px; margin: 0 auto; padding: 66px 40px 60px; }
+
+.section-heading { font-size: 20px; color: #0f172a; margin-bottom: 24px; }
+
+.empty-hint { color: #94a3b8; font-size: 14px; text-align: center; padding: 30px 0; }
+
+.empty-state { text-align: center; background: #fff; border-radius: 14px; padding: 60px 20px; box-shadow: 0 4px 14px rgba(0,0,0,0.05); }
+.empty-state p { color: #64748b; margin-bottom: 20px; }
+
+.jobs-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
+
+.job-manage-card { background: #fff; border-radius: 14px; padding: 24px; box-shadow: 0 4px 14px rgba(0,0,0,0.05); transition: transform 0.2s ease; }
+.job-manage-card:hover { transform: translateY(-4px); }
+
+.job-manage-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px; gap: 8px; }
+.job-manage-header h3 { font-size: 16px; color: #0f172a; }
+
+.status-pill { padding: 4px 12px; border-radius: 20px; font-size: 11px; font-weight: 700; text-transform: capitalize; white-space: nowrap; }
+.pill-green { background: #dcfce7; color: #16a34a; }
+.pill-red { background: #fee2e2; color: #dc2626; }
+
+.job-manage-meta { font-size: 13px; color: #64748b; margin-bottom: 4px; }
+
+.applicant-count-box {
+  display: flex; align-items: baseline; gap: 6px; margin: 16px 0; padding: 14px;
+  background: #eff6ff; border-radius: 10px; justify-content: center;
+}
+.applicant-number { font-size: 22px; font-weight: 800; color: #2563eb; }
+.applicant-count-box span:last-child { font-size: 13px; color: #475569; }
+
+.view-applicants-btn {
+  display: block; text-align: center; padding: 11px; background: #2563eb; color: #fff; border-radius: 8px;
+  text-decoration: none; font-weight: 600; font-size: 13px;
+}
+.view-applicants-btn:hover { background: #1d4ed8; }
+.employer-header-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo-upload-box {
+  width: 60px;
+  height: 60px;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.1);
+  border: 2px dashed rgba(255,255,255,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+
+.logo-upload-box:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+.logo-placeholder {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.logo-uploading {
+  font-size: 12px;
+  color: #cbd5e1;
+}
+
+.company-logo-preview {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
